@@ -1,5 +1,5 @@
 Source: libxdmcp
-Section: x11
+Section: gui
 Priority: optional
 Maintainer: Alexander Shishkin <virtuoso@slind.org>
 Build-Depends: debhelper (>= 4.0.0), pkg-config, x11proto-core-dev
