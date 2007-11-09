@@ -1,0 +1,56 @@
+Source: libxdmcp
+Section: x11
+Priority: optional
+Maintainer: Alexander Shishkin <virtuoso@slind.org>
+Build-Depends: debhelper (>= 4.0.0), pkg-config, x11proto-core-dev
+XCS-Cross-Build-Depends: x11proto-core-dev, cross-toolchain
+XCS-Cross-Host-Build-Depends: debhelper, pkg-config
+Standards-Version: 3.6.1.0
+
+Package: libxdmcp6
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: X11 Display Manager Control Protocol library
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found as the module 'lib/Xdmcp' at
+ :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg
+
+Package: libxdmcp6-dbg
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libxdmcp6 (= ${Source-Version})
+Description: X11 authorisation library (debug package)
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ This package contains the debug versions of the library found in libxdmcp6.
+ Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found as the module 'lib/Xdmcp' at
+ :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg
+
+Package: libxdmcp-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libxdmcp6 (= ${Source-Version}), x11proto-core-dev
+Description: X11 authorisation library (development headers)
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ This package contains the development headers for the library found in libxdmcp6.
+ Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found as the module 'lib/Xdmcp' at
+ :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg

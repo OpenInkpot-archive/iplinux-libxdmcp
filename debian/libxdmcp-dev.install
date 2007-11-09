@@ -1,0 +1,5 @@
+usr/include/X11/*
+usr/share/man/man3/*
+usr/lib/libXdmcp.a
+usr/lib/libXdmcp.so
+usr/lib/pkgconfig/xdmcp.pc
