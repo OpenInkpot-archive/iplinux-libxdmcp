@@ -22,6 +22,7 @@ Description: X11 Display Manager Control Protocol library
  :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg
 
 Package: libxdmcp6-dbg
+Section: debug
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libxdmcp6 (= ${Source-Version})
 Description: X11 authorisation library (debug package)
@@ -39,6 +40,7 @@ Description: X11 authorisation library (debug package)
  :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg
 
 Package: libxdmcp-dev
+Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libxdmcp6 (= ${Source-Version}), x11proto-core-dev
 Description: X11 authorisation library (development headers)
