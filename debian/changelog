@@ -1,3 +1,9 @@
+libxdmcp (1:1.0.2-2) asimov; urgency=low
+
+  * Fixed section for -dbg and -dev packages.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Sat, 14 Mar 2009 16:30:11 +0600
+
 libxdmcp (1:1.0.2-1) asimov; urgency=low
 
   * New upstream release.
